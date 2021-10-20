@@ -31,8 +31,8 @@ function requestApi(city){
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
-    const ApiKey = 'ab772cd89c4c5a89db5fbace3eafb445';
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${ApiKey}`;
+    let apiKey = '438a84098c174f8b83a93b574091a15c';
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
     fetchData();
 }
 
